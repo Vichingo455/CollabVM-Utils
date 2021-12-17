@@ -11,3 +11,5 @@ reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /f
 reg delete HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop /f
 reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop /f
 echo Rebooting...
+wmic os where primary=1 reboot
+exit
