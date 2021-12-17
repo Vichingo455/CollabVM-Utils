@@ -7,4 +7,5 @@ exit
 )
 reg add "HKLM\Software\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD / d 0 /f
 echo Done! Restarting...
-wmic os where primary=1 rebootexit
+wmic os where primary=1 reboot
+exit
